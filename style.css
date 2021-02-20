@@ -1,45 +1,52 @@
-body{
+body {
   padding: 30px;
-  
 }
-header{
+header {
   height: 95vh;
-  background-image:linear-gradient(to right bottom,rgba(5, 0, 0, 0.8),rgba(241, 241, 247, 0.8)), url(keyboard-dark.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(5, 0, 0, 0.8),
+      rgba(241, 241, 247, 0.8)
+    ),
+    url(keyboard-dark.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
   margin-bottom: 40px;
 }
-.page2{
+.page2 {
   height: 95vh;
-  background-image:linear-gradient(to right bottom,rgba(5, 0, 0, 0.8),rgba(241, 241, 247, 0.8)), url(macbook.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(5, 0, 0, 0.8),
+      rgba(241, 241, 247, 0.8)
+    ),
+    url(macbook.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
   margin-bottom: 40px;
-  
 }
 
 .box-container {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   padding: 30px;
-  
 }
 
-.box-container div{
-    padding: 10px;
+.box-container div {
+  padding: 10px;
 }
 .box1 {
-  color:white;
+  color: white;
   border: 1px solid white;
   flex-basis: 30%;
   transform: border-radius 5s;
 }
 .box2 {
-  color:white;
+  color: white;
   border: 1px solid white;
   border-radius: 15px;
   flex-basis: 30%;
@@ -60,16 +67,15 @@ header{
   border-radius: 15px;
   transition: background-color 2s;
 }
-div.box4:hover{
-  background-color:white;
+div.box4:hover {
+  background-color: white;
   border: 2px solid black;
   color: black;
 }
 
-div.box1:hover{
+div.box1:hover {
   color: red;
   border-radius: 35px;
-
 }
 
 div.box5 {
@@ -81,75 +87,100 @@ div.box5 {
   transition-property: skewX;
   transition-duration: 5s;
 }
-div.box5:hover{
-  transform:skewX(120deg);
-  
+div.box5:hover {
+  transform: skewX(120deg);
 }
-.title-box{
-  position:absolute;
+.title-box {
+  position: absolute;
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
-
 }
-.heading-primary{
-  color:white;
+.heading-primary {
+  color: white;
   text-transform: uppercase;
-
 }
-.heading-primary-main{
+.heading-primary-main {
   display: block;
-  letter-spacing: 30px;
+  letter-spacing: 10px;
   font-size: 60px;
   font-weight: 600;
   animation-name: moveInLeft;
-  animation-duration: 5s;
-
+  animation-duration: 4s;
+  height: 80px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-.heading-primary-sub{
-display: block;
-font-size: 25px;
-font-weight: 400;
-letter-spacing: 30px;
+
+.heading-primary-sub {
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 30px;
+  animation-name: moveInRight;
+  animation-duration: 4s;
 }
 
 @keyframes moveInLeft {
-  0%{
-opacity: 0;
-transform: translateX(-100px);
-color:black;
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
   }
-  70%{
+  70% {
     opacity: 0.6;
     transform: translateX(30px);
   }
-  100%{
-opacity: 1;
-transform: translateX(0);
-color: white;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    color: white;
   }
 }
 
-.box6{
-  padding:30px;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  70% {
+    opacity: 0.6;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    color: white;
+  }
+}
+
+.box6 {
+  padding: 30px;
   margin: 30px;
   border: 1px solid white;
   width: 40%;
   height: 40px;
 }
 
-.box6::before, .box6::after{
-  content: '';
+.box6::before,
+.box6::after {
+  content: "";
   background-color: red;
   height: 5px;
   width: 10px;
   position: absolute;
-
 }
 
-.page3{
+.page3 {
   height: 95vh;
-  background-image:linear-gradient(to right bottom,rgba(5, 0, 0, 0.8),rgba(241, 241, 247, 0.8)), url(macbook.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(5, 0, 0, 0.8),
+      rgba(241, 241, 247, 0.8)
+    ),
+    url(macbook.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -161,23 +192,23 @@ color: white;
   padding-right: 12%;
   padding-left: 12%;
 }
-.heading{
+.heading {
   font-size: 40;
   color: white;
   font-weight: 700;
 }
-img{
+img {
   height: 300px;
   width: 100%;
 }
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
   justify-content: space-around;
 }
 
-.col{
+.col {
   flex-basis: 28%;
   box-sizing: border-box;
   text-align: center;
@@ -185,21 +216,65 @@ img{
   cursor: pointer;
 }
 
-.profile{
+.profile {
   width: 100%;
   height: 100%;
-  background:rgba(61, 61, 136, 0.8);
+  background: rgb(61, 61, 136);
   box-sizing: border-box;
   padding: 12px;
 }
 
-col::before {
- content: '';
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(135deg , #ff001d, #ddfa00);
+.col::before,
+.col::after {
+  content: "";
+  height: 0;
+  width: 0;
+  background: linear-gradient(135deg, #ff001d, #ddfa00);
   position: absolute;
+  z-index: -1;
+  animation: none;
+}
+.col::before {
+  left: 0;
+  top: -8px;
+}
+.col:after {
+  right: 0;
+  bottom: -8px;
 }
 
+@keyframes ravi {
+  0% {
+    height: 8px;
+    width: 0px;
+  }
+  50% {
+    height: 8px;
+    width: calc(100% + 8px);
+  }
+  100% {
+    height: calc(100% + 16px);
+    width: calc(100% + 8px);
+  }
+}
+.col:hover::before,
+.col:hover::after {
+  animation: ravi 0.5s linear;
+  animation-fill-mode: forwards;
+}
 
-
+.slider {
+  color: yellow;
+  box-sizing: border-box;
+  margin-left: 12px;
+  animation: sliding 6s linear infinite;
+}
+@keyframes sliding {
+  0% { margin-top: -280px;}
+  5% { margin-top: -140px;}
+  30% { margin-top: -140px;}
+  35% { margin-top: 0;}
+  65% { margin-top: 0;}
+  70% { margin-top: 140px;}
+  100% { margin-top: 140px;}
+}
