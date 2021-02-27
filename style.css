@@ -96,24 +96,7 @@ div.box5:hover {
   top: 40%;
   transform: translate(-50%, -50%);
 }
-.heading-primary {
-  color: white;
-  text-transform: uppercase;
-}
-.heading-primary-main {
-  display: block;
-  letter-spacing: 10px;
-  font-size: 60px;
-  font-weight: 600;
-  animation-name: moveInLeft;
-  animation-duration: 4s;
-  height: 80px;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+
 
 .heading-primary-sub {
   display: block;
@@ -262,19 +245,37 @@ img {
   animation: ravi 0.5s linear;
   animation-fill-mode: forwards;
 }
-
-.slider {
-  color: yellow;
-  box-sizing: border-box;
-  margin-left: 12px;
-  animation: sliding 6s linear infinite;
+.btn-box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
-@keyframes sliding {
-  0% { margin-top: -280px;}
-  5% { margin-top: -140px;}
-  30% { margin-top: -140px;}
-  35% { margin-top: 0;}
-  65% { margin-top: 0;}
-  70% { margin-top: 140px;}
-  100% { margin-top: 140px;}
+.btn{
+
+  padding: 15px;
+  border-radius: 100px;
+  border: 1px solid black;
+  background-color: cyan;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  animation: btnAnimation 1.5s;
+}
+.btn:hover{
+  background-color: darkcyan;
+}
+
+@keyframes btnAnimation{
+  0% {
+  opacity: 0;
+  transform:translateX(280px)
+  }
+  80% {
+    opacity: 1;
+    transform:translateX(-20px)
+  }
+  100% {
+    opacity: 1;
+    transform:translateX(0)
+  }
 }

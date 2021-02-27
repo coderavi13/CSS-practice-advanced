@@ -1,0 +1,22 @@
+{
+  "name": "css-practice-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderavi13/CSS-practice-advanced.git"
+  },
+  "author": "Ravi Nivangune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderavi13/CSS-practice-advanced/issues"
+  },
+  "homepage": "https://github.com/coderavi13/CSS-practice-advanced#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
